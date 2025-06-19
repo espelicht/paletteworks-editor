@@ -5,11 +5,11 @@
 >
 > ⏳ This project has been inactive since 2022, but it's not fully abandoned. I may occasionally update it when I am motivated and well enough.
 > 
-> 🙏 I genuinely appreciate everyone who’s shown interest, and I’m always open to feedback, discussions, or pull requests — as long as I’m feeling healthy and capable enough to respond.
+> 🙏 I genuinely appreciate everyone who's shown interest, and I'm always open to feedback, discussions, or pull requests — as long as I'm feeling healthy and capable enough to respond.
 >
-> 🤝 If someone is motivated to continue developing PaletteWorks Editor, I’d be more than happy and honored to see it live on, and I’d gladly support however I can.
+> 🤝 If someone is motivated to continue developing PaletteWorks Editor, I'd be more than happy and honored to see it live on, and I'd gladly support however I can.
 >
-> 🔄 If you’re looking for similar tools or more actively maintained projects, there are modern alternative softwares such as [**MikuMikuWorld4CC**](https://github.com/sevenc-nanashi/MikuMikuWorld4CC).
+> 🔄 If you're looking for similar tools or more actively maintained projects, there are modern alternative softwares such as [**MikuMikuWorld4CC**](https://github.com/sevenc-nanashi/MikuMikuWorld4CC).
 >
 > 2025-04-01
 
@@ -17,8 +17,8 @@
 
 本程序爲「世界計劃：繽紛舞臺 feat. 初音未來」的自製譜面編輯器，目標是提供更好的創作體驗。
 
-“프로젝트 세카이 컬러풀 스테이지! feat.하츠네 미쿠” 의 자작채보 에디터입니다. 채보를 더 만들기 쉽게 하는 것을 목표로 하고 있습니다.
-(“프로젝트 세카이 컬러풀 스테이지! feat.하츠네 미쿠” 의 自作採譜 에디터입니다. 採譜를 더 만들기 쉽게 하는 것을 目標로 하고 있습니다.)
+"프로젝트 세카이 컬러풀 스테이지! feat.하츠네 미쿠" 의 자작채보 에디터입니다. 채보를 더 만들기 쉽게 하는 것을 목표로 하고 있습니다.
+("프로젝트 세카이 컬러풀 스테이지! feat.하츠네 미쿠" 의 自作採譜 에디터입니다. 採譜를 더 만들기 쉽게 하는 것을 目標로 하고 있습니다.)
 
 ## Acknowledgements / 謝辞 / 致謝 / 사사(謝辭)
 
@@ -46,6 +46,35 @@ and many others from 紫式部 / Sonolus Discord ...
 </a>
 
 Made with [contrib.rocks](https://contrib.rocks).
+
+## 開発環境の立ち上げ（Docker 版）
+
+PaletteWorks Editor を Docker だけで手軽に起動する手順です。
+
+```bash
+# イメージをビルド
+docker build -t paletteworks-editor .
+
+# コンテナを起動（ホットリロード対応）
+docker run --rm -it -p 3000:3000 -v ${PWD}:/app paletteworks-editor
+```
+
+ブラウザで `http://localhost:3000` を開くとエディターが表示されます。  
+Windows の cmd では `${PWD}` を `%cd%` に読み替えてください。
+
+## 公式 Docker イメージを利用する
+
+GitHub Actions で自動ビルドされたイメージを GHCR から取得できます。
+
+```bash
+# イメージを pull（最新版）
+docker pull ghcr.io/espelicht/paletteworks-editor:latest
+
+# 起動
+docker run --rm -it -p 3000:3000 ghcr.io/espelicht/paletteworks-editor:latest
+```
+
+`espelicht` 以外のフォークで利用する場合は、オーナー名を自身のものに置き換えてください。
 
 ## [Contribution Guide / コントリビュート方法 / 貢獻指南 / 기여하는 방법 (寄與하는 方法)](docs/CONTRIBUTE.md)
 
