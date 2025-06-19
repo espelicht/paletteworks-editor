@@ -62,6 +62,21 @@ docker run --rm -it -p 3000:3000 -v ${PWD}:/app paletteworks-editor
 ブラウザで `http://localhost:3000` を開くとエディターが表示されます。  
 Windows の cmd では `${PWD}` を `%cd%` に読み替えてください。
 
+## 公式 Docker イメージを利用する
+
+GitHub Actions で自動ビルドされたイメージを GHCR から取得できます。
+
+```bash
+# イメージを pull（最新版）
+docker pull ghcr.io/${GITHUB_USER}/paletteworks-editor:latest
+
+# 起動
+docker run --rm -it -p 3000:3000 ghcr.io/${GITHUB_USER}/paletteworks-editor:latest
+```
+
+`${GITHUB_USER}` にはリポジトリ所有者（例: `mkpoli`）を入れてください。  
+イメージタグをコミット SHA に置き換えると特定バージョンを利用できます。
+
 ## [Contribution Guide / コントリビュート方法 / 貢獻指南 / 기여하는 방법 (寄與하는 方法)](docs/CONTRIBUTE.md)
 
 ## LICENSE / ライセンス / 授權 / 사용권(使用權)
