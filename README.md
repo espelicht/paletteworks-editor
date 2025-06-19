@@ -68,14 +68,13 @@ GitHub Actions で自動ビルドされたイメージを GHCR から取得で�
 
 ```bash
 # イメージを pull（最新版）
-docker pull ghcr.io/${GITHUB_USER}/paletteworks-editor:latest
+docker pull ghcr.io/espelicht/paletteworks-editor:latest
 
 # 起動
-docker run --rm -it -p 3000:3000 ghcr.io/${GITHUB_USER}/paletteworks-editor:latest
+docker run --rm -it -p 3000:3000 ghcr.io/espelicht/paletteworks-editor:latest
 ```
 
-`${GITHUB_USER}` にはリポジトリ所有者（例: `mkpoli`）を入れてください。  
-イメージタグをコミット SHA に置き換えると特定バージョンを利用できます。
+`espelicht` 以外のフォークで利用する場合は、オーナー名を自身のものに置き換えてください。
 
 ## [Contribution Guide / コントリビュート方法 / 貢獻指南 / 기여하는 방법 (寄與하는 方法)](docs/CONTRIBUTE.md)
 
