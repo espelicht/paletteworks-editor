@@ -56,10 +56,10 @@ PaletteWorks Editor を Docker だけで手軽に起動する手順です。
 docker build -t paletteworks-editor .
 
 # コンテナを起動（ホットリロード対応）
-docker run --rm -it -p 5173:5173 -v ${PWD}:/app paletteworks-editor
+docker run --rm -it -p 3000:3000 -v ${PWD}:/app paletteworks-editor
 ```
 
-ブラウザで `http://localhost:5173` を開くとエディターが表示されます。  
+ブラウザで `http://localhost:3000` を開くとエディターが表示されます。  
 Windows の cmd では `${PWD}` を `%cd%` に読み替えてください。
 
 ## [Contribution Guide / コントリビュート方法 / 貢獻指南 / 기여하는 방법 (寄與하는 方法)](docs/CONTRIBUTE.md)
