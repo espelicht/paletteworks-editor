@@ -11,6 +11,7 @@
       },
     }
   }
+  export const ssr = false
 </script>
 
 <script lang="ts">

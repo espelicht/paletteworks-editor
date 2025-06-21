@@ -3,7 +3,8 @@
   "private": true,
   "version": "1.11.3",
   "scripts": {
-    "dev": "svelte-kit dev",
+    "dev": "vite dev",
+    "dev:old": "svelte-kit dev",
     "clean": "rimraf build",
     "build:svelte-kit": "svelte-kit build",
     "build": "run-s clean build:svelte-kit",
@@ -67,7 +68,9 @@
     "ts-jest": "29.4.0",
     "tslib": "2.8.1",
     "typesafe-i18n": "5.26.2",
-    "typescript": "5.8.3"
+    "typescript": "5.8.3",
+    "vite": "^6.3.5",
+    "vite-plugin-devtools-json": "^0.2.0"
   },
   "type": "module",
   "dependencies": {
