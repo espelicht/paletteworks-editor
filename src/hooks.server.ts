@@ -22,7 +22,7 @@
 // }
 
 import { base } from '$app/paths'
-import type { Locales } from '$i18n/i18n-types.js'
+// import type { Locales } from '$i18n/i18n-types.js'
 import { detectLocale, i18n } from '$i18n/i18n-util'
 import { loadAllLocales } from '$i18n/i18n-util.sync'
 import { redirect, type Handle, type RequestEvent } from '@sveltejs/kit'

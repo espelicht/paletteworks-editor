@@ -3,7 +3,8 @@
   "private": true,
   "version": "1.11.3",
   "scripts": {
-    "dev": "vite dev",
+    "dev": "run-p typesafe-i18n dev:vite",
+    "dev:vite": "vite dev",
     "dev:old": "svelte-kit dev",
     "clean": "rimraf build",
     "build:svelte-kit": "svelte-kit build",

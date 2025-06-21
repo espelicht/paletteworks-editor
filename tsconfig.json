@@ -1,4 +1,5 @@
 {
+  "extends": "./.svelte-kit/tsconfig.json",
   "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.svelte"],
   "compilerOptions": {
     "moduleResolution": "node",
@@ -22,14 +23,14 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": "src",
+    // "baseUrl": "src",
     "allowJs": false,
-    "checkJs": false,
-    "paths": {
-      "$lib/*": ["lib/*"],
-      "$assets/*": ["assets/*"],
-      "$i18n/*": ["i18n/*"]
-    }
+    "checkJs": false
+    // "paths": {
+    //   "$lib/*": ["./src/lib/*"],
+    //   "$assets/*": ["./src/assets/*"],
+    //   "$i18n/*": ["./src/i18n/*"]
+    // }
     // "typeRoots": ["node_modules/@types"]
   }
 }

@@ -1,5 +1,5 @@
-import path from 'node:path'
-import vercelAdapter from '@sveltejs/adapter-vercel'
+// import path from 'node:path'
+// import vercelAdapter from '@sveltejs/adapter-vercel'
 import staticAdapter from '@sveltejs/adapter-static'
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 
@@ -21,6 +21,12 @@ const config = {
       precompress: false,
       strict: true,
     }),
+
+    alias: {
+      $lib: 'src/lib',
+      $assets: 'src/assets',
+      $i18n: 'src/i18n',
+    },
 
     // vite: {
     //   assetsInclude: ['**/*.fnt'],

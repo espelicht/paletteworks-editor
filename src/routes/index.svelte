@@ -1,18 +1,18 @@
 <script lang="ts">
-  import ClickableIcon from '$lib/ui/ClickableIcon.svelte'
-  import Icon from '@iconify/svelte'
+  // import ClickableIcon from '$lib/ui/ClickableIcon.svelte'
+  // import Icon from '@iconify/svelte'
 
-  import screenshot from '$assets/homepage/screenshot.png'
-  import editing from '$assets/homepage/editing.png'
-  import soundeffects from '$assets/homepage/soundeffects.png'
-  import filesupport from '$assets/homepage/filesupport.png'
+  // import screenshot from '$assets/homepage/screenshot.png'
+  // import editing from '$assets/homepage/editing.png'
+  // import soundeffects from '$assets/homepage/soundeffects.png'
+  // import filesupport from '$assets/homepage/filesupport.png'
 </script>
 
 <svelte:head>
   <title>PaletteWorks Editor - Homepage</title>
 </svelte:head>
 
-<header>
+<!-- <header>
   <h1><img src="/favicon.png" alt="Logo" class="logo" />PaletteWorks Editor</h1>
   <nav>
     <a href="/edit">CREATE NOW</a>
@@ -70,7 +70,7 @@
       <ClickableIcon icon="logos:twitter" href="https://twitter.com/_mkpoli/" />
     </div>
   </div>
-</footer>
+</footer> -->
 
 <style>
   :global(body) {
